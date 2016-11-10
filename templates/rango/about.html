@@ -1,0 +1,40 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+    <h1>Our friends!</h1>
+    <div>
+        <h2>This tutorial has benn put together by YangHuan.</h2>
+    </div>
+    <div>
+        <img src="{% static 'image/about.jpg' %}" alt="Picture of about" />
+    </div>
+{% endblock %}
+
+<!-- The code blow is pre-chapter 8>
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rango</title>
+</head>
+<body>
+    <h1>Our friends!</h1>
+    <div>
+        This tutorial has been put together by YangHuan.<br />
+    </div>
+    <div>
+        <!-- <a href="/rango/">Index</a><br />
+        <a href="{% url 'rango:index' %}">Index</a> <br />
+        <img src="{% static "image/about.jpg" %}" alt="Picture of about" />
+
+    </div>
+
+</body>
+</html>
+-->
